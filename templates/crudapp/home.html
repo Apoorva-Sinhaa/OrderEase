@@ -1,12 +1,30 @@
 {% extends 'layout.html' %}
 
 {% block title %}
-  Home Page
+  <title>OrderEase - Home</title>
 {% endblock %}
 
 {% block content %}
-   <h1 class="display-4 mb-3">Welcome to bla blat</h1>
-    <p class="lead mb-4">Your simple and stylish Django CRUD app.</p>
-    <a href="{% url 'order_url' %}" class="btn btn-success btn-lg me-2">Add Order</a>
-    <a href="{% url 'show_url' %}" class="btn btn-outline-light btn-lg bg-dark">Show Orders</a>
+
+<div style="background-color: #4B9CD3; min-height: 100vh; width: 100%; margin: 0; padding:0; display: flex; justify-content: center; align-items: center;">
+
+
+  <div class="bg-white text-center shadow-lg p-5 rounded mb-7" style="max-width: 700px; width: 90%;">
+    <h1 class="display-4 mb-3">📦 Welcome to <strong>OrderEase</strong></h1>
+    <p class="lead">Manage your tasks or orders efficiently with just a few clicks.</p>
+
+    <div class="mt-4">
+      <a href="{% url 'order_url' %}" class="btn btn-success btn-lg m-2 fw-bold">➕ Add Order</a>
+      <a href="{% url 'show_url' %}" class="btn btn-primary btn-lg m-2 fw-bold">📋 View Orders</a>
+    </div>
+
+    <p class="text-muted mt-4">Organize. Track. Simplify your workflow with ease.</p>
+  </div>
+
+</div>
 {% endblock %}
+
+
+
+
+

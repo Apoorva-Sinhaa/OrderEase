@@ -2,6 +2,29 @@
 {% load crispy_forms_tags %}
 
 {% block title %}
+  <title>Place Order</title>
+{% endblock %}
+
+{% block content %}
+<div class="container-fluid bg-light py-5">
+  <h2 class="text-center mb-4">Order Form</h2>
+  <form method="post" class="px-5">
+    {% csrf_token %}
+    {{ form|crispy }}
+    <div class="text-right mt-4">
+      <button type="submit" class="btn btn-success btn-lg px-4">Place Order</button>
+    </div>
+  </form>
+</div>
+{% endblock %}
+
+
+
+
+{% comment %} {% extends 'layout.html' %}
+{% load crispy_forms_tags %}
+
+{% block title %}
     <title>Add Page</title>
 {% endblock %}
 
@@ -14,4 +37,4 @@
         <input type="submit" value="Place Order" class="btn btn-success">
     </form>
 </div>
-{% endblock %}
+{% endblock %} {% endcomment %}
