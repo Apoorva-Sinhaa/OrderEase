@@ -12,7 +12,7 @@
     {% csrf_token %}
     {{ form|crispy }}
     <div class="text-right mt-4">
-      <button type="submit" class="btn btn-success btn-lg px-4">Place Order</button>
+      <button type="submit" class="btn btn-dark btn-lg px-4">Place Order</button>
     </div>
   </form>
 </div>
@@ -21,20 +21,3 @@
 
 
 
-{% comment %} {% extends 'layout.html' %}
-{% load crispy_forms_tags %}
-
-{% block title %}
-    <title>Add Page</title>
-{% endblock %}
-
-{% block content %}
-<center><h1>Order Form</h1></center>
-<div class="container">
-    <form method="post" class="jumbotron">
-        {% csrf_token %}
-        {{form|crispy}}
-        <input type="submit" value="Place Order" class="btn btn-success">
-    </form>
-</div>
-{% endblock %} {% endcomment %}

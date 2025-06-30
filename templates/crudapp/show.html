@@ -5,8 +5,9 @@
 {% endblock %}
 
 {% block content %}
-<center><h1>Show Orders</h1></center>
-<table class="table">
+
+<center class="m-5 align-center"><h1>Show Orders</h1></center>
+<table class="table  table-bordered table-hover m-3">
     <thead>
       <tr>
         <th scope="col">Order ID</th>
@@ -28,8 +29,9 @@
         <td>{{i.mail}}</td>
         <td>{{i.addr}}</td>
         <td>
-            <button class="btn btn-warning"><a href="{% url 'update_url' i.oid %}">Update</a></button>&nbsp;&nbsp;
-            <button class="btn btn-danger"><a href="{% url 'delete_url' i.oid %}">Delete</a></button>
+           <a href="{% url 'update_url' i.oid %}" class="btn"style="background-color: gray; color: white;">Update</a>&nbsp;&nbsp;
+           <a href="{% url 'delete_url' i.oid %}" class="btn" style="background-color: gray; color: white;">Delete</a>
+
         </td>
       </tr>
     {% endfor %}
