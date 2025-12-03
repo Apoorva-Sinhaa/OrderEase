@@ -27,7 +27,7 @@ OrderEase is a Django-based web application for managing and tracking customer o
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/orderease.git
+git clone https://github.com/Apoorva-Sinhaa/OrderEase.git
 cd orderease
 ```
 
